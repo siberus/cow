@@ -49,16 +49,10 @@ int main()
         cout << "0";
         return 0;
     }
-    //Формирование массива различных результатов (удаление повторяющихся)
+
     rang = 1;
     result = arr.at(index);
-    for (int i = 0; i < arr.size()-1; i++) {
-        for (int j = 1; j < arr.size(); j++) {
-            if (arr.at(i) == arr.at(j)) {
-                arr.erase(arr.begin() + j);
-            }
-        }   
-    }
+
     //Поиск места
     for (int i = 0; i < arr.size(); i++) {
         if (arr.at(i) > result) {
